@@ -1,5 +1,7 @@
-//Initialise new object from Github class in github.js file
+//Initialise github object from Github class in github.js file
 const github = new Github();
+//Initialise ui object from Github class in ui.js file
+const ui = new UI();
 
 //#### UI elements
 //Search input
@@ -17,7 +19,8 @@ searchUser.addEventListener('keyup', function(e) {
       if(data.profile.message === 'Not Found') {
         console.log('User not found');
       } else {
-        console.log(data);
+        //show profile
+        ui.showProfile(data.profile);
       }
       
     })
