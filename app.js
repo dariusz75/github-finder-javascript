@@ -21,7 +21,7 @@ searchUser.addEventListener('keyup', function(e) {
         ui.showAlert();
       } else if (data.repos.length === 0) {
         console.log('no repos');
-        
+        ui.showNoReposAlert();
       } 
       else {
         //show profile
@@ -32,5 +32,6 @@ searchUser.addEventListener('keyup', function(e) {
   } else {
     //clear profile
     ui.clearProfile();
+    ui.clearRepos();
   }
 });

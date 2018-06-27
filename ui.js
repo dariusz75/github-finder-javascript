@@ -27,7 +27,6 @@ class UI {
         </div>
       </div>
       <h3 class="page-heading mb-3">Public Repos</h3>
-      <div id="repos"></div>
     `
     console.log(user);
   }
@@ -61,9 +60,18 @@ class UI {
     `
   }
 
+  showNoReposAlert() {
+    this.repos.innerHTML = `
+    <div class="alert alert-danger" role="alert">No Public repos for this user.</div>
+  `;
+  }
+
   clearProfile() {
     this.profile.innerHTML = '';
   }
 
+  clearRepos() {
+    this.repos.innerHTML = '';
+  }
 
 }
