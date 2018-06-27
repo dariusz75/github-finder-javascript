@@ -19,7 +19,11 @@ searchUser.addEventListener('keyup', function(e) {
       if(data.profile.message === 'Not Found') {
         //show alert
         ui.showAlert();
-      } else {
+      } else if (data.repos.length === 0) {
+        console.log('no repos');
+        
+      } 
+      else {
         //show profile
         ui.showProfile(data.profile);
         ui.showRepos(data.repos);

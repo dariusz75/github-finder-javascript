@@ -26,7 +26,7 @@ class UI {
           </div>
         </div>
       </div>
-      <h3 class="page-heading mb-3">Latest Repos</h3>
+      <h3 class="page-heading mb-3">Public Repos</h3>
       <div id="repos"></div>
     `
     console.log(user);
