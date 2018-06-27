@@ -30,4 +30,14 @@ class UI {
     `
     console.log(user);
   }
+
+  showAlert() {
+    this.profile.innerHTML = `
+      <div class="alert alert-danger" role="alert">User not found</div>
+    `
+  }
+
+  clearProfile() {
+    this.profile.innerHTML = '';
+  }
 }
