@@ -1,6 +1,7 @@
 class UI {
   constructor() {
     this.profile = document.getElementById('profile');
+    this.repos = document.getElementById('repos');
   }
 
   showProfile(user) {
@@ -31,6 +32,12 @@ class UI {
     console.log(user);
   }
 
+  showRepos() {
+    this.repos.innerHTML = `
+    <div></div>
+    `;
+  }
+
   showAlert() {
     this.profile.innerHTML = `
       <div class="alert alert-danger" role="alert">User not found</div>
@@ -40,4 +47,6 @@ class UI {
   clearProfile() {
     this.profile.innerHTML = '';
   }
+
+
 }
